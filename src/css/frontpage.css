@@ -1,159 +1,81 @@
-main p,
-main h1 {
-	text-shadow: 1px 1px 2px #393977;
+main ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
 }
 
-#eLevel1 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/events/gamedev101/header.png);
+main ul h1,
+main ul a {
+	color: white;
 }
 
-#r216 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/216/blender.png);
+main ul li {
+	margin: 0;
+	padding: 0;
+	flex-grow: 1;
+	flex-basis: 25%;
+	min-height: 25vw;
+	overflow: hidden;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#noc {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/videos/noc/what-is-it.jpg);
+main ul li[itemtype*="Event"],
+main ul li[itemtype*="Person"] {
+	flex-grow: 2;
+	flex-basis: 50%;
+	flex-shrink: 2;
 }
 
-#ld30 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/ld/30/sinister.png);
+main ul li.hero,
+main ul li:first-child {
+	flex-grow: 3;
+	flex-basis: 75%;
+	flex-shrink: 3;
 }
 
-#r215 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/215/nano.jpg);
+main ul li[itemtype*="Event"]:nth-child(odd):not(:first-child),
+main ul li[itemtype*="Person"]:nth-child(odd):not(:first-child) {
+	flex-basis: 25%;
 }
 
-#r214 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/214/hordeszero.png);
+main ul p {
+	display: none;
 }
 
-#r213 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/213/haxor.png);
+footer {
+	padding: 0;
 }
 
-#r212 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/212/gain.png);
+main ul li:nth-child(3n+1) {
+	background-color: #6ad0f6;
 }
 
-#r211 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/211/sunset.jpg);
+main ul li:nth-child(3n+2) {
+	background-color: #3A3A3A;
 }
 
-#flambes-future {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/wwx/2014/switching-to-dart.jpg);
+main ul li:nth-child(3n+3) {
+	background-color: #8bf66a;
 }
 
-#r210 {
-	background-image: linear-gradient(rgba(82,244,125,0.3),rgba(82,244,125,0.3)), url(/img/210/haxe-license-plate.jpg);
+main ul li:nth-child(3n+4):nth-child(even) {
+	background-color: rgb(254, 126, 78);
 }
 
-#cocktail-nme {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/wwx/2014/thomas_fetiveau.jpg);
-	background-position-x: 50%;
-	background-position-y: 15%;
+main ul li a {
+	align-self: center;
+	margin: 0 auto;
 }
 
-#r209 {
-	background-image: linear-gradient(rgba(82,244,125,0.3),rgba(82,244,125,0.3)), url(/img/209/weblog.png);
-}
-
-#cpp-magic {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/wwx/2014/hugh-magic.jpg);
-}
-
-#r208 {
-	background-image: linear-gradient(rgba(82,244,125,0.3),rgba(82,244,125,0.3)), url(/img/208/hide.png);
-}
-
-#one-year-of-haxe {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/wwx/2014/new-haxe-site.jpg);
-}
-
-#r207 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.5)), url(/img/207/Beacon.png);
-}
-
-#r206 {
-	background-image: linear-gradient(rgba(244,82,201,0.5),rgba(244,82,201,0.5)), url(/img/206/uppercup.png);
-}
-
-#r205 {
-	/*background-image: linear-gradient(rgba(241,228,34,0.3),rgba(241,228,34,0.3)), url(/img/205/pewma.jpg);*/
-	background-image: linear-gradient(rgba(82,244,125,0.3),rgba(82,244,125,0.3)), url(/img/205/pewma.jpg);
-	background-position: bottom;
-}
-
-#r204 {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/204/bronko.png);
-}
-
-#r203 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/203/kha-demo.png);
-	background-position: center;
-}
-
-#r202 {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/202/zombiedelivery.png);
-}
-
-#r201 {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/201/january-haxeflixel.png);
-}
-
-#speaker_juraj {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/wwx/2014/Juraj_Kirchheim_wwx_2013.jpg);
-	background-position: center;
-}
-
-#speaker_elliott {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/wwx/2014/ElliottStoneham2014.jpg);
-}
-
-#speaker_justin {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/wwx/2014/jjd-sailing.png);
-}
-
-#speaker_caue {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/wwx/2014/caue_waneck_wwx_2011_1.jpg);
-	background-position: center;
-}
-
-#speaker_franco {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/wwx/2014/franco_ponticelli_wwx_2011_3.jpg);
-}
-
-#speaker_andreas {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/wwx/2014/andreas_soderlund_wwx_2014.jpg);
-}
-
-#speaker_hugh {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/wwx/2014/hugh_sanderson_wwx_2012_3.jpg);
-	background-position: center;
-}
-
-#r200 {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/200/kha.png);
-	background-position: center;
-}
-
-#r199 {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/199/haxor-knight.png);
-	background-position: center;
-}
-
-#ld29 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/ld/29/ld-lich-king.png);
-}
-
-#r198 {
-	background-image: linear-gradient(rgba(244,82,201,0.3),rgba(244,82,201,0.3)), url(/img/198/beneath.png);
-	background-position: center;
-}
-
-#r197 {
-	background-image: linear-gradient(rgba(82,201,244,0.3),rgba(82,201,244,0.3)), url(/img/197/netwars.png);
-}
-
-#r196 {
-	background-image: linear-gradient(rgba(82,244,206,0.3),rgba(82,244,206,0.3)), url(/img/196/alleycats.png);
+main ul li.hero h1,
+main ul li:first-child h1 {
+	padding-bottom: 0.625em;
+	border-bottom-width: 0.3125em;
+	border-bottom-style: solid;
+	border-bottom-color: white;
 }

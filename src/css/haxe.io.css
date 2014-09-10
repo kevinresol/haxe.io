@@ -369,78 +369,6 @@ article section > h2 > a > span::before {
 	margin-left: 0.6em;
 }
 
-/* Front Page */
-
-html main ul {
-	margin: 0;
-	padding: 0;
-}
-
-html[class="/"] main li,
-html[class="/"] main li:first-child {
-	height: 10.5em;
-	display: block;
-	position: relative;
-	width: 100%;
-	float: left;
-	overflow: hidden;
-}
-
-html[class="/"] main li:first-child {
-	height: 10.5em;
-}
-
-html[class="/"] main li a {
-	display: block;
-	padding-top: 0.625em;
-	text-decoration: none;
-}
-
-html[class="/"] main li a,
-html[class="/"] main li p {
-	padding-left: 0.625em;
-	padding-right: 0.625em;
-	color: white;
-}
-
-html[class="/"] main li h1,
-html[class="/"] main li p {
-	font-weight: normal;
-	margin: 0;
-}
-
-html[class="/"] main li h1 {
-	font-family: Arial;
-	padding-bottom: 0.625em;
-}
-
-/*html[class="/"] main li:not(:first-child) p {
-	padding-top: 21em;
-}*/
-
-html[class="/"] main li:nth-child(3n+2):not(id) {
-	/*background-image: linear-gradient(rgba(82,244,206,0.5),rgba(82,244,206,0.5));*/
-	background: rgba(82,244,206,1);
-}
-
-html[class="/"] main li:nth-child(3n+3):not(id) {
-	/*background: linear-gradient(rgba(241,228,34,0.5),rgba(241,228,34,0.5));*/
-	background: rgba(241,228,34,1);
-}
-
-html[class="/"] main li:nth-child(3n+4):not(id) {
-	/*background: linear-gradient(rgba(82,201,244,0.5),rgba(82,201,244,0.5));*/
-	background: rgba(82,201,244,1);
-}
-
-html[class="/"] main li:first-child {
-	background-size: cover;
-}
-
-html[class="/"] footer {
-	padding: 0;
-}
-
 /*
 Video & Event CSS
 */
@@ -540,14 +468,6 @@ iframe[src*="eventbrite.com"] {
 	pre[language], 
 	code[language] {
 		tab-size: 3;
-	}
-	
-	html[class="/"] main li {
-		min-height: 21em;
-	}
-
-	html[class="/"] main li {
-		width: 50%;
 	}
 }
 
@@ -757,14 +677,6 @@ iframe[src*="eventbrite.com"] {
 		font-size: 4em;
 	}
 	
-	html[class="/"] main li {
-		width: 33.33%;
-	}
-	
-	html[class="/"] main li:first-child {
-		width: 66.66%;
-		height: 21em;
-	}
 }
 
 @media all and (min-width: 1020px) {
@@ -790,14 +702,6 @@ iframe[src*="eventbrite.com"] {
 	html[class*="/events"] .hero,
 	html[class*="/events"] article {
 		width: 80%;
-	}
-	
-	html[class="/"] main li {
-		width: 25%;
-	}
-	
-	html[class="/"] main li:first-child {
-		width: 75%;
 	}
 }
 
