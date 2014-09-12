@@ -73,16 +73,11 @@ header > div:first-child {
 	background-color: rgb(241,89,34);
 }
 
-footer svg,
-header svg {
+footer img,
+header img {
 	width: 6.25em;
 	height: 6.25em;
 	margin: 0.625em;
-}
-
-footer svg path,
-header svg path {
-	stroke: white;
 }
 
 /* Footer */
@@ -91,7 +86,7 @@ footer::not(html[class*="/videos"]) {
 	padding-top: 4.5em;
 }
 
-footer svg {
+footer img {
 	float: right;
 }
 
