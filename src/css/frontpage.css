@@ -66,8 +66,8 @@ main ul li:nth-child(5n+4):nth-child(even) {
 }
 
 main ul li h1 {
-	margin: 10%;
 	text-align: center;
+	line-height: 3rem;
 }
 
 main ul li a,
@@ -81,30 +81,17 @@ main ul li:nth-child(5n+3):nth-child(even) h1 {
 }
 
 main ul li a {
-	margin: 0 auto;
+	margin: 10%;
 	align-self: center;
 	text-decoration: none;
 }
 
-main ul li.hero h1,
-main ul li:first-child h1 {
-	padding-bottom: 0.625em;
-	border-bottom-width: 0.3125em;
-	border-bottom-style: solid;
-	border-bottom-color: white;
-}
-
-main ul li a[href*="roundups"] h1:first-of-type {
-	display: none;
-}
-
-main ul li a[href*="roundups"] h1:last-of-type {
+/*main ul li a[href*="roundups"] h1:last-of-type {
 	margin: 0;
 	padding: 1.25em;
 	border-style: solid;
 	border-width: 0.5rem;
-	/*border-color: white;*/
-}
+}*/
 
 main ul li a[href*="roundups"] h1:last-of-type img {
 	width: 1.6em;
