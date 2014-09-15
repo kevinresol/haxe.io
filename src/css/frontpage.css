@@ -33,35 +33,45 @@ main ul li:nth-child(5n+2) {
 	flex-basis: 50%;
 }
 
-main ul li:nth-child(5n+1) {
+main ul li:nth-child(5n+1),
+main ul li:nth-child(5n+2):nth-child(odd) {
 	/* blue */
 	background-color: #6ad0f6;
 }
 
-main ul li:nth-child(5n+2) {
+main ul li:nth-child(5n+2),
+main ul li:nth-child(5n+1):nth-child(even) {
 	/* grey */
 	background-color: #3A3A3A;
 }
 
 main ul li:nth-child(5n+3) {
-	background-color: white;
-}
-
-main ul li:nth-child(5n+4) {
-	/* green */
-	background-color: #8bf66a;
-}
-
-main ul li:nth-child(5n+5) {
 	/* yellow */
 	background-color: #f5cf52;
 }
 
 main ul li:nth-child(5n+3):nth-child(odd) {
+	/* pink */
 	background-color: #f66a8b;
 }
 
+main ul li:nth-child(5n+4) {
+	/* off white */
+	background-color: #F7F7F7;
+}
+
+main ul li:nth-child(5n+5) {
+	/* green */
+	background-color: #52f57e;
+}
+
+main ul li:nth-child(5n+5):nth-child(odd) {
+	/* green */
+	background-color: #f5cf52;
+}
+
 main ul li:nth-child(5n+4):nth-child(even) {
+	/* orange */
 	background-color: #fe7e4e;
 }
 
@@ -75,8 +85,9 @@ main ul li h1 {
 	color: white;
 }
 
-main ul li:nth-child(5n+3):nth-child(even) a,
-main ul li:nth-child(5n+3):nth-child(even) h1 {
+main ul li:nth-child(5n+4):nth-child(odd) a,
+main ul li:nth-child(5n+4):nth-child(odd) h1 {
+	/* grey */
 	color: #3A3A3A;
 }
 
