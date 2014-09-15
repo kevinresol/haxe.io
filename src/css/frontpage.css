@@ -141,9 +141,8 @@ main ul li a {
 
 main ul li a,
 main ul li p {
-	margin-left: 2vw;
-	margin-right: 2vw;
-	align-self: center;
+	margin-left: 3.2rem;
+	margin-right: 3.2rem;
 	text-decoration: none;
 }
 
