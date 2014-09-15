@@ -10,8 +10,17 @@ main ul {
 	align-items: stretch;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
 main ul p {
-	display: none;
+	font-family: 'Gentium Book Basic', serif;
 }
 
 main ul li {
@@ -31,78 +40,112 @@ main ul li:nth-child(5n+1),
 main ul li:nth-child(5n+2) {
 	flex-grow: 1;
 	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/*main ul li:nth-child(5n+1) a,*/
+main ul li p {
+	font-size: 1.5rem;
 }
 
 main ul li:nth-child(5n+1),
 main ul li:nth-child(5n+2):nth-child(odd) {
 	/* blue */
-	background-color: #6ad0f6;
+	background-color: #6ad1f6;
+	text-shadow: 0.1rem 0.1rem 0.1rem #52c9f5;
 }
 
 main ul li:nth-child(5n+2),
 main ul li:nth-child(5n+1):nth-child(even) {
 	/* grey */
 	background-color: #3A3A3A;
+	text-shadow: 0.1rem 0.1rem 0.1rem #474747;
 }
 
 main ul li:nth-child(5n+3) {
 	/* yellow */
 	background-color: #f5cf52;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f4c83a;
 }
 
 main ul li:nth-child(5n+3):nth-child(odd) {
 	/* pink */
 	background-color: #f66a8b;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f55278;
 }
 
 main ul li:nth-child(5n+4) {
 	/* off white */
 	background-color: #F7F7F7;
+	text-shadow: 0.1rem 0.1rem 0.1rem #eaeaea;
 }
 
 main ul li:nth-child(5n+5) {
 	/* green */
 	background-color: #52f57e;
+	text-shadow: 0.1rem 0.1rem 0.1rem #3af46c;
 }
 
 main ul li:nth-child(5n+5):nth-child(odd) {
-	/* green */
+	/* yellow */
 	background-color: #f5cf52;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f4c83a;
 }
 
 main ul li:nth-child(5n+4):nth-child(even) {
 	/* orange */
 	background-color: #fe7e4e;
+	text-shadow: 0.1rem 0.1rem 0.1rem #fe6c35;
+}
+
+main ul li:nth-child(5n+3) p,
+main ul li:nth-child(5n+4) p,
+main ul li:nth-child(5n+5) p {
+	display: none;
+}
+
+main ul li p,
+main ul li h1 {
+	text-align: center;
 }
 
 main ul li h1 {
-	text-align: center;
 	line-height: 3rem;
 }
 
 main ul li a,
+main ul li p,
 main ul li h1 {
 	color: white;
 }
 
+main ul li:nth-child(5n+1) h1,
+main ul li:nth-child(5n+2) h1 {
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+	border-bottom: 0.1rem solid;
+}
+
 main ul li:nth-child(5n+4):nth-child(odd) a,
+main ul li:nth-child(5n+4):nth-child(odd) p,
 main ul li:nth-child(5n+4):nth-child(odd) h1 {
 	/* grey */
 	color: #3A3A3A;
 }
 
 main ul li a {
-	margin: 10%;
+	margin-top: 5%;
+}
+
+main ul li a,
+main ul li p {
+	margin-left: 5%;
+	margin-right: 5%;
 	align-self: center;
 	text-decoration: none;
 }
-
-/*main ul li a[href*="roundups"] h1:last-of-type {
-	margin: 0;
-	padding: 1.25em;
-	border-style: solid;
-	border-width: 0.5rem;
-}*/
 
 main ul li a[href*="roundups"] h1:last-of-type img {
 	width: 1.6em;
@@ -120,10 +163,4 @@ main ul li a[href*="roundups"] h1:last-of-type img:last-of-type {
 main ul li a[href*="roundups"] h1:last-of-type div {
 	font-size: 5rem;
 	line-height: 56px;
-}
-
-svg.event .day {
-	text-anchor:middle;
-	text-align:center;
-	font-size: 0.4em;
 }
