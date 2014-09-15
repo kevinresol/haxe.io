@@ -1,17 +1,25 @@
+footer,
+main ul {
+	padding: 0;
+}
+
 main ul {
 	margin: 0;
-	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
+}
+
+main ul p {
+	display: none;
 }
 
 main ul li {
 	margin: 0;
 	padding: 0;
 	flex-grow: 1;
-	flex-basis: 25%;
-	min-height: 25vw;
+	flex-basis: 33.33%;
+	min-height: 33.33vw;
 	overflow: hidden;
 	
 	display: flex;
@@ -19,52 +27,57 @@ main ul li {
 	justify-content: center;
 }
 
-main ul li[itemtype*="Event"],
-main ul li[itemtype*="Person"] {
-	flex-grow: 2;
+main ul li:nth-child(5n+1),
+main ul li:nth-child(5n+2) {
+	flex-grow: 1;
 	flex-basis: 50%;
-	flex-shrink: 2;
 }
 
-main ul li.hero,
-main ul li:first-child {
-	flex-grow: 3;
-	flex-basis: 75%;
-	flex-shrink: 3;
-}
-
-main ul li[itemtype*="Event"]:nth-child(odd):not(:first-child),
-main ul li[itemtype*="Person"]:nth-child(odd):not(:first-child) {
-	flex-basis: 25%;
-}
-
-main ul p {
-	display: none;
-}
-
-footer {
-	padding: 0;
-}
-
-main ul li:nth-child(3n+1) {
+main ul li:nth-child(5n+1) {
+	/* blue */
 	background-color: #6ad0f6;
 }
 
-main ul li:nth-child(3n+2) {
+main ul li:nth-child(5n+2) {
+	/* grey */
 	background-color: #3A3A3A;
 }
 
-main ul li:nth-child(3n+3) {
+main ul li:nth-child(5n+3) {
+	background-color: white;
+}
+
+main ul li:nth-child(5n+4) {
+	/* green */
 	background-color: #8bf66a;
 }
 
-main ul li:nth-child(3n+4):nth-child(even) {
-	background-color: rgb(254, 126, 78);
+main ul li:nth-child(5n+5) {
+	/* yellow */
+	background-color: #f5cf52;
+}
+
+main ul li:nth-child(5n+3):nth-child(odd) {
+	background-color: #f66a8b;
+}
+
+main ul li:nth-child(5n+4):nth-child(even) {
+	background-color: #fe7e4e;
+}
+
+main ul li h1 {
+	margin: 10%;
+	text-align: center;
 }
 
 main ul li a,
 main ul li h1 {
 	color: white;
+}
+
+main ul li:nth-child(5n+3):nth-child(even) a,
+main ul li:nth-child(5n+3):nth-child(even) h1 {
+	color: #3A3A3A;
 }
 
 main ul li a {
@@ -90,7 +103,7 @@ main ul li a[href*="roundups"] h1:last-of-type {
 	padding: 1.25em;
 	border-style: solid;
 	border-width: 0.5rem;
-	border-color: white;
+	/*border-color: white;*/
 }
 
 main ul li a[href*="roundups"] h1:last-of-type img {
