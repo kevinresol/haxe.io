@@ -12,7 +12,6 @@ main ul li div {
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	/*align-items: stretch;*/
 }
 
 main ul li div {
@@ -24,6 +23,7 @@ main ul li div {
 }
 
 main ul li div svg {
+	/* off white */
 	fill: #f7f7f7;
 }
 
@@ -33,16 +33,27 @@ main ul li div > svg {
 }
 
 main ul li div > time {
+	display: flex;
 	flex-grow: 1;
+	text-align: right;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+	align-items: center;
 }
 
 main ul li div > time svg {
 	width: 1.5rem;
 	height: 1.5rem;
-	float: right;
 }
 
-a {
+main ul li div time span {
+	color: #f7f7f7;
+	margin-right: .5rem;
+	font-size: 1rem;
+}
+
+a,
+time span {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -187,10 +198,13 @@ main ul li:nth-child(5n+2) a:not([title]) {
 
 main ul li:nth-child(5n+3) p,
 main ul li:nth-child(5n+3) a:not([title]),
+main ul li:nth-child(5n+3) time span,
 main ul li:nth-child(5n+4) p,
 main ul li:nth-child(5n+4) a:not([title]),
+main ul li:nth-child(5n+4) time span,
 main ul li:nth-child(5n+5) p,
-main ul li:nth-child(5n+5) a:not([title]) {
+main ul li:nth-child(5n+5) a:not([title]),
+main ul li:nth-child(5n+5) time span {
 	display: none;
 }
 
