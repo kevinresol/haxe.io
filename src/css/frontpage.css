@@ -3,19 +3,46 @@ main ul {
 	padding: 0;
 }
 
-main ul {
+main ul,
+main ul li,
+main ul li:nth-child(5n+1),
+main ul li:nth-child(5n+2),
+main ul li div {
 	margin: 0;
 	display: flex;
+	flex-grow: 1;
 	flex-wrap: wrap;
-	align-items: stretch;
+	/*align-items: stretch;*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+main ul li div {
+	width: 100%;
+	align-self: flex-end;
+	flex-direction: row;
+	max-height: 2.5rem;
+	padding: .5rem;
+}
+
+main ul li div svg {
+	fill: #f7f7f7;
+}
+
+main ul li div > svg {
+	flex-basis: 1.5rem;
+	margin-right: .5rem;
+}
+
+main ul li div > time {
+	flex-grow: 1;
+}
+
+main ul li div > time svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	float: right;
+}
+
+a {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -26,28 +53,28 @@ main ul p {
 main ul li {
 	margin: 0;
 	padding: 0;
-	flex-grow: 1;
 	flex-basis: 33.33%;
 	min-height: 33.33vw;
 	overflow: hidden;
-	
-	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
 main ul li:nth-child(5n+1),
 main ul li:nth-child(5n+2) {
-	flex-grow: 1;
 	flex-basis: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	align-items: center;
+	justify-content: space-around;
 }
 
-/*main ul li:nth-child(5n+1) a,*/
+main ul li:nth-child(5n+3),
+main ul li:nth-child(5n+4),
+main ul li:nth-child(5n+5) {
+	align-items: flex-end;
+}
+
 main ul li p {
 	font-size: 1.5rem;
+	flex-grow: 2;
 }
 
 main ul li:nth-child(5n+1),
@@ -57,17 +84,38 @@ main ul li:nth-child(5n+2):nth-child(odd) {
 	text-shadow: 0.1rem 0.1rem 0.1rem #52c9f5;
 }
 
+main ul li:nth-child(5n+1) div,
+main ul li:nth-child(5n+1) a:not([title]):hover,
+main ul li:nth-child(5n+2):nth-child(odd) div,
+main ul li:nth-child(5n+2):nth-child(odd) a:not([title]):hover {
+	/* blue */
+	background-color: #52c9f5;
+}
+
 main ul li:nth-child(5n+2),
 main ul li:nth-child(5n+1):nth-child(even) {
 	/* grey */
-	background-color: #3A3A3A;
-	text-shadow: 0.1rem 0.1rem 0.1rem #474747;
+	background-color: #3a3a3a;
+	text-shadow: 0.1rem 0.1rem 0.1rem #303030;
+}
+
+main ul li:nth-child(5n+2) div,
+main ul li:nth-child(5n+2) a:not([title]):hover,
+main ul li:nth-child(5n+1):nth-child(even) div,
+main ul li:nth-child(5n+1):nth-child(even) a:not([title]):hover {
+	/* grey */
+	background-color: #303030;
 }
 
 main ul li:nth-child(5n+3) {
 	/* yellow */
 	background-color: #f5cf52;
-	text-shadow: 0.1rem 0.1rem 0.1rem #f4c83a;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f3c93a;
+}
+
+main ul li:nth-child(5n+3) div {
+	/* yellow */
+	background-color: #f3c93a;
 }
 
 main ul li:nth-child(5n+3):nth-child(odd) {
@@ -76,22 +124,42 @@ main ul li:nth-child(5n+3):nth-child(odd) {
 	text-shadow: 0.1rem 0.1rem 0.1rem #f55278;
 }
 
+main ul li:nth-child(5n+3):nth-child(odd) div {
+	/* pink */
+	background-color: #f55278;
+}
+
 main ul li:nth-child(5n+4) {
 	/* off white */
-	background-color: #F7F7F7;
-	text-shadow: 0.1rem 0.1rem 0.1rem #eaeaea;
+	background-color: #f7f7f7;
+	text-shadow: 0.1rem 0.1rem 0.1rem #dddddd;
+}
+
+main ul li:nth-child(5n+4) div {
+	/* off white */
+	background-color: #eaeaea;
 }
 
 main ul li:nth-child(5n+5) {
 	/* green */
 	background-color: #52f57e;
-	text-shadow: 0.1rem 0.1rem 0.1rem #3af46c;
+	text-shadow: 0.1rem 0.1rem 0.1rem #22f25a;
+}
+
+main ul li:nth-child(5n+5) div {
+	/* green */
+	background-color: #22f25a;
 }
 
 main ul li:nth-child(5n+5):nth-child(odd) {
 	/* yellow */
 	background-color: #f5cf52;
-	text-shadow: 0.1rem 0.1rem 0.1rem #f4c83a;
+	text-shadow: 0.1rem 0.1rem 0.1rem #f3c93a;
+}
+
+main ul li:nth-child(5n+5):nth-child(odd) div {
+	/* yellow */
+	background-color: #f3c93a;
 }
 
 main ul li:nth-child(5n+4):nth-child(even) {
@@ -100,9 +168,29 @@ main ul li:nth-child(5n+4):nth-child(even) {
 	text-shadow: 0.1rem 0.1rem 0.1rem #fe6c35;
 }
 
+main ul li:nth-child(5n+4):nth-child(even) div {
+	/* orange */
+	background-color: #fe6c35;
+}
+
+main ul li:nth-child(5n+1) a:not([title]),
+main ul li:nth-child(5n+2) a:not([title]) {
+	border: .1rem solid #f7f7f7;
+	font-size: 1rem;
+	border-radius: .3rem;
+	padding: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
 main ul li:nth-child(5n+3) p,
+main ul li:nth-child(5n+3) a:not([title]),
 main ul li:nth-child(5n+4) p,
-main ul li:nth-child(5n+5) p {
+main ul li:nth-child(5n+4) a:not([title]),
+main ul li:nth-child(5n+5) p,
+main ul li:nth-child(5n+5) a:not([title]) {
 	display: none;
 }
 
@@ -132,7 +220,11 @@ main ul li:nth-child(5n+4):nth-child(odd) a,
 main ul li:nth-child(5n+4):nth-child(odd) p,
 main ul li:nth-child(5n+4):nth-child(odd) h1 {
 	/* grey */
-	color: #3A3A3A;
+	color: #3a3a3a;
+}
+
+main ul li:nth-child(5n+4):nth-child(odd) div svg {
+	fill: #3a3a3a;
 }
 
 main ul li a {
