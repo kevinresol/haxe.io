@@ -66,6 +66,11 @@ section,
 	padding-right: 0.625em;
 }
 
+p:empty,
+svg.icons {
+	display: none;
+}
+
 /* Header & Footer */
 
 footer > div:first-child,
@@ -91,10 +96,6 @@ footer img {
 }
 
 /* Typography */
-
-p:empty {
-	display: none;
-}
 
 p {
 	font-size: 1.1em;
