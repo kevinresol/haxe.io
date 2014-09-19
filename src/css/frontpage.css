@@ -251,21 +251,3 @@ main ul li p {
 	margin-right: 3.2rem;
 	text-decoration: none;
 }
-
-main ul li a[href*="roundups"] h1:last-of-type img {
-	width: 1.6em;
-	margin-bottom: 0.625em;
-}
-
-main ul li a[href*="roundups"] h1:last-of-type img:first-of-type {
-	margin-right: 0.3125em;
-}
-
-main ul li a[href*="roundups"] h1:last-of-type img:last-of-type {
-	margin-left: 0.3125em;
-}
-
-main ul li a[href*="roundups"] h1:last-of-type div {
-	font-size: 5rem;
-	line-height: 56px;
-}
